@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CCL Project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <!-- further HTML elements, that should maybe be displayed above your game. E.g. Healtbar, .... -->
+  <!-- <div id="healthDisplay"></div> -->
+  <div id="startScreen">
+    <h1>Wizard's Curse</h1>
+    <p>Press 'J' to shoot!</p>
+    <button id="startButton">Start Game</button>
+  </div>
+  <div id="gameContainer">
+    <!-- further HTML elements, that should be behind your game. e.g. Background image, .... -->
+    <!-- <div id="backGround"></div> -->
+    <canvas id="canvas" width="1000" height="800"></canvas> <!-- change the size attributes of your canvas according to your game -->
+    <!-- further HTML elements, that should overlay your game. e.g. Main Screen, Game Over screen, .... -->
+    <!-- <div id="mainScreen"></div> -->
+  </div>
+  <div id="gameOverScreen">
+    <h1>Game Over :(</h1>
+    <button id="tryAgainButton">Try again?</button>
+  </div>
+  <div id="winScreen">
+    <h1>You Win!</h1>
+    <button id="winButton">Play again?</button>
+  </div>
+  <!-- further HTML elements, that should maybe be displayed below your game. E.g. Score, .... -->
+  
+
+  <script type="module" src="./scripts/modules/global.js"></script>
+  <script type="module" src="./scripts/modules/input.js"></script>
+  <script type="module" src="./scripts/modules/main.js"></script>
+  
+</body>
+</html>
