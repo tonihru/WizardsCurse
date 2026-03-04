@@ -16,10 +16,10 @@ class Projectile extends BaseGameObject {
     reactToCollision = function(collidingObject) {
         switch (collidingObject.name) {
             case "Wall":
-                this.active = "false"
+                this.active = false
                 break;
             case "Enemy":
-                this.active = "false"
+                this.active = false
         }
     }
 

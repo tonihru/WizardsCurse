@@ -7,7 +7,7 @@ class Wall extends BaseGameObject {
 
     constructor(x, y, width, height) {
         super(x, y, width, height);
-        this.loadImages([/images/TreeMine.png])
+        this.loadImages(["/images/TreeMine.png"])
     }
 
 }

@@ -34,16 +34,16 @@ class Player extends BaseGameObject {
         if (this.x < 0) {
             this.x = 0;
             this.xVelocity = 0;
-        } else if (this.x + this.width > canvas.width) {
-            this.x = canvas.width - this.width;
+        } else if (this.x + this.width > global.canvas.width) {
+            this.x = global.canvas.width - this.width;
             this.xVelocity = 0;
         }
     
         if (this.y < 0) {
             this.y = 0;
             this.yVelocity = 0;
-        } else if (this.y + this.height > canvas.height) {
-            this.y = canvas.height - this.height;
+        } else if (this.y + this.height > global.canvas.height) {
+            this.y = global.canvas.height - this.height;
             this.yVelocity = 0;
         }
 
