@@ -85,7 +85,7 @@ class Enemy extends BaseGameObject {
     reactToCollision = function(collidingObject) {
         switch (collidingObject.name) {
             case "Projectile":
-                this.active = "false"
+                this.active = false
                 console.log(`Bruda was los hier? Enemy at (${this.x}, ${this.y}) active: ${this.active}`);
                 break;
             case "Wall":

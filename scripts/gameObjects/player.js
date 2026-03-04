@@ -59,7 +59,7 @@ class Player extends BaseGameObject {
                 this.y = this.previousY;
                 break;
             case "Enemy":
-                this.active = "false"
+                this.active = false
                 break;
         }
         
@@ -67,7 +67,7 @@ class Player extends BaseGameObject {
 
     constructor(x, y, width, height, facingDirection) {
         super(x, y, width, height, facingDirection)
-        this.loadImagesFromSpritesheet("../images/SpriteSheetWizardDone.png", 6, 4)
+        this.loadImagesFromSpritesheet("./images/SpriteSheetWizardDone.png", 6, 4)
         console.log(global.allGameObjects)
     }
 }

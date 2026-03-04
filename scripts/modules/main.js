@@ -32,7 +32,7 @@ function gameLoop(totalRunningTime) {
     }
     
     //checks for game over
-    if(global.playerObject.active == "false") {
+    if(global.playerObject.active == false) {
         console.log("hallo???")
         showGameOverScreen();
     }
@@ -40,7 +40,7 @@ function gameLoop(totalRunningTime) {
     //checks for win condition
     const allEnemiesInactive = global.allGameObjects
     .filter(obj => obj instanceof Enemy)
-    .every(enemy => enemy.active === "false");
+    .every(enemy => enemy.active === false);
 
     if (allEnemiesInactive) {
     showWinScreen();

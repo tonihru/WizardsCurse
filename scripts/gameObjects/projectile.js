@@ -53,7 +53,7 @@ class Projectile extends BaseGameObject {
 
     constructor(x, y, width, height, facingDirection) {
         super(x, y, width, height, facingDirection);
-        this.loadImagesFromSpritesheet("../images/Waterprojectile.png", 3, 4); 
+        this.loadImagesFromSpritesheet("./images/Waterprojectile.png", 3, 4); 
         this.shoot();
     }
 }
